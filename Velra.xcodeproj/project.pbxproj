@@ -1,0 +1,1147 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71E848D552807F8DCFAE9F5F /* VelraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708FDA605C57F789D9330D7E /* VelraApp.swift */; };
+		5A8C0FBB5FDA6CAEF929D832 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056A84DFF45A3F7E7BFD71E /* AppCoordinator.swift */; };
+		F1818E595AB730AD63357058 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2BE3B8DF64DAAEEF406A0 /* DependencyContainer.swift */; };
+		8675AB0438224BECF9C25088 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96556681655A3E661A76401 /* AppConfiguration.swift */; };
+		BC4473AC697E388F456B70C0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F383EF1A5E569919BF4FD35 /* APIClient.swift */; };
+		740FAF43FED5AB2994B58F0A /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237FB9C6E66E3F74F8381EA /* APIEndpoint.swift */; };
+		CCB202E18CBB7BA449EA001D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BD2BC21CB05408E68068F /* APIError.swift */; };
+		8F0FA706B960C5EF8702732E /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70FFA3C202A920A8A07B09 /* AuthEndpoint.swift */; };
+		FE5E2B9F23805E331BBE7088 /* CartEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230FDBCC72319767D4A965 /* CartEndpoint.swift */; };
+		F1E123557EA82D0F830872EC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230345834093D61D1EB1B57F /* HTTPMethod.swift */; };
+		D22F018C38B67BB7E6495AB7 /* OrderEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539194520F693AFED6ADC66B /* OrderEndpoint.swift */; };
+		B11EAD443833ABF9CC1D1C5E /* PaymentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C33FFB6278719BE13C55C29 /* PaymentEndpoint.swift */; };
+		52A5F2CBEEE3556B40FC61C4 /* ProductEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0D7598969D50227369DA26 /* ProductEndpoint.swift */; };
+		811C19F1EAC86FD8CA6805FB /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7655BAFD90E62F5E2BB9A /* KeychainManager.swift */; };
+		E96BED4461F8EE2CE7B8364F /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72858B8531F56360C3901229 /* TokenManager.swift */; };
+		F4CAF99A9CA92342A5D65401 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E276683B84366777524E5211 /* PersistenceController.swift */; };
+		04B508C8AD2CED2FB9272C8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69449B58712EA32C0317B0F6 /* Constants.swift */; };
+		2C2876EA3165A77F57869563 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9189810866D1821A605DEF6E /* Extensions.swift */; };
+		944203633E1C8611544600A5 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37624EF793C38F9E06256F /* CartItem.swift */; };
+		E41EDEC19B6DE12909A7988D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4E66B947D0C4D0B52C9CE /* Order.swift */; };
+		636A96AEDB8F7AEBB78E1450 /* PaymentIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BD551D85A53DBBA2EDD24F /* PaymentIntent.swift */; };
+		C5988E318B086FD27148EA99 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303D729EF01AA93781AD5E70 /* Product.swift */; };
+		AFC1A1567DC3FECE9A256EFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D22D595D3C7DF888270B81 /* User.swift */; };
+		265D1CF240DDA8A63E2A80DB /* AuthRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542150A14A45B653E57EEBBC /* AuthRepositoryProtocol.swift */; };
+		F04F71FDDB0ED44527D113A1 /* CartRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30068AEE66C35DD9AE62C05 /* CartRepositoryProtocol.swift */; };
+		A69C0D8677F692B2A5B87115 /* OrderRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B6FF45D183D02D9B23AAF1 /* OrderRepositoryProtocol.swift */; };
+		461D995A2286B95E9D97DF74 /* PaymentRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C45972FECDE4889DEB3493 /* PaymentRepositoryProtocol.swift */; };
+		8FD67CE8793409CF306A437A /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622B9B17A0FECFE9C47B6D2B /* ProductRepositoryProtocol.swift */; };
+		14E2DF60E7A3386AFCC2D8F9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446785297501548DEDA544F4 /* AuthService.swift */; };
+		747FC31997B37481B1AE3579 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FB49704E8766E241DD512 /* CartService.swift */; };
+		E9F111C73AEF3EBF9BE11C74 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA9BAE9CB8B53CAF97F4518 /* OrderService.swift */; };
+		A7EEA4C90D6043966C4D6491 /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B030F157B92AE4D0A18F3 /* PaymentService.swift */; };
+		6B3BD589A8BDA63343AEA9D4 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2632A5113BFB9665F25D1 /* ProductService.swift */; };
+		93D4CB0092CAD68D67A035AE /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44218D630D5D9AA02FEBDC /* AuthCoordinator.swift */; };
+		5D376AE547D09F8C2769FA15 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E534FAEB008222FEDD41CD /* LoginViewModel.swift */; };
+		27FAFB84A5F0AB70846DA33E /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C02F92B0C0C445D8E77084 /* RegisterViewModel.swift */; };
+		571A409E86561BAB9BA0620A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28235E89177CA9556850F92E /* LoginView.swift */; };
+		39C104CBE620CCAE985ACFA4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9948837DA9C19D0135E70AA /* RegisterView.swift */; };
+		677B86B7EB5AFF4BC5F6D910 /* CartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FAC8FBBE40D320079F66C0 /* CartCoordinator.swift */; };
+		3D76D871C80F32041331AF5A /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68F3040B4B9A2BCA08E2D3 /* CartViewModel.swift */; };
+		9A84CBCF0175C4AFC2CC3B6F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C870F7ADE6644FA894F2C9 /* CartView.swift */; };
+		5EB55BBAEA4B29A535AA8564 /* CheckoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC110621D2C7EF3CAC2ADAAF /* CheckoutCoordinator.swift */; };
+		DDB825FA7486ECCFBD2AEEF3 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE8B8E650044B479C97363 /* CheckoutViewModel.swift */; };
+		259773CAAE1D7FA4D6F837AA /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374E1BC4E8818111F584258B /* CheckoutView.swift */; };
+		9C6A57EE2A8261FE742D5909 /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19006CC9315AAE8CA45D7B63 /* OrderCoordinator.swift */; };
+		70EEC4B2AD242A86F0C060BF /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132567EB49077BF8C6D6D35 /* OrderDetailViewModel.swift */; };
+		72A551DE5F818DCB88AA85F4 /* OrderHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D8392720E12EA5CB6D536 /* OrderHistoryViewModel.swift */; };
+		CA79AEFB575A31CCBA16E725 /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C687619652D01E2972E861E /* OrderDetailView.swift */; };
+		4810B62B4A9513713F5EBA2D /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2CEAF4D6ACC66B01357B9D /* OrderHistoryView.swift */; };
+		FC46A1547CA5BC8335F5A285 /* ProductCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647EECF7602B422A049DE264 /* ProductCoordinator.swift */; };
+		1E6AA5C4187B539FB0A1DF8D /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA52C58E2D24C5533180DB1 /* ProductDetailViewModel.swift */; };
+		212B193713D6B0C90DFFCDCB /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23E762F7BAC33082C44A4FF /* ProductListViewModel.swift */; };
+		2ADA33082F256D7F5612798F /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF59BAE7E914734ACF379A /* ProductDetailView.swift */; };
+		D14D977101FC102C26892736 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA30DA75DA0CC1058A1A6DF /* ProductListView.swift */; };
+		70A8B8B901CA83DC5963FF26 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8222913DF2C8FB0DBD939 /* PushNotificationManager.swift */; };
+		1C50828355318A2BC3F64438 /* StripePaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE174A02B1ED6D1776DDF1 /* StripePaymentService.swift */; };
+		909630E34B4A8A9428DAEEA8 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7457B885F5833A9CD7EAA59B /* APIClientTests.swift */; };
+		372B18E0D526879AA8FFDAE8 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6680BC65839A5DD91C3CB6 /* ModelTests.swift */; };
+		CDD348492A1021C7076E9BC2 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338A48BAEEBB3A3F72ABE697 /* ExtensionTests.swift */; };
+		9DE9F0DCF4E62971435C3F6E /* CartServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981A60EB1D1441F34E55F95 /* CartServiceTests.swift */; };
+		A10075173F569092FE444EDE /* VelraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D115C065CCB734989B400A87 /* VelraUITests.swift */; };
+		D3873B01431877C7B07F8D19 /* VelraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0B737F8E3878309222576 /* VelraUITestsLaunchTests.swift */; };
+		99810209AD4FE3320BC122AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F02208A1E6A99468703A4E /* Assets.xcassets */; };
+		5D6D6BD089265E713A425640 /* StripePaymentSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 8E41AA8251BDFF81594496EC /* StripePaymentSheet */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54B2C0C2D036711EC50215B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7C5BB25CEB9D151DDACCD7D;
+			remoteInfo = Velra;
+		};
+		216F88528C8D10A4B8041F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7C5BB25CEB9D151DDACCD7D;
+			remoteInfo = Velra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE81E76C18D72107BBFA5C60 /* Velra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Velra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2286AB0530DE56FCB9BCCFEB /* VelraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3012743933F91F6229C7455 /* VelraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		708FDA605C57F789D9330D7E /* VelraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelraApp.swift; sourceTree = "<group>"; };
+		F056A84DFF45A3F7E7BFD71E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9FB2BE3B8DF64DAAEEF406A0 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		A96556681655A3E661A76401 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		7F383EF1A5E569919BF4FD35 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2237FB9C6E66E3F74F8381EA /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		784BD2BC21CB05408E68068F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EB70FFA3C202A920A8A07B09 /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
+		84230FDBCC72319767D4A965 /* CartEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartEndpoint.swift; sourceTree = "<group>"; };
+		230345834093D61D1EB1B57F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		539194520F693AFED6ADC66B /* OrderEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEndpoint.swift; sourceTree = "<group>"; };
+		9C33FFB6278719BE13C55C29 /* PaymentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentEndpoint.swift; sourceTree = "<group>"; };
+		EF0D7598969D50227369DA26 /* ProductEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndpoint.swift; sourceTree = "<group>"; };
+		F4C7655BAFD90E62F5E2BB9A /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		72858B8531F56360C3901229 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		E276683B84366777524E5211 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		69449B58712EA32C0317B0F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9189810866D1821A605DEF6E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3F37624EF793C38F9E06256F /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		E0A4E66B947D0C4D0B52C9CE /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		33BD551D85A53DBBA2EDD24F /* PaymentIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentIntent.swift; sourceTree = "<group>"; };
+		303D729EF01AA93781AD5E70 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		89D22D595D3C7DF888270B81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		542150A14A45B653E57EEBBC /* AuthRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E30068AEE66C35DD9AE62C05 /* CartRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRepositoryProtocol.swift; sourceTree = "<group>"; };
+		53B6FF45D183D02D9B23AAF1 /* OrderRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E0C45972FECDE4889DEB3493 /* PaymentRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRepositoryProtocol.swift; sourceTree = "<group>"; };
+		622B9B17A0FECFE9C47B6D2B /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
+		446785297501548DEDA544F4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		902FB49704E8766E241DD512 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		5CA9BAE9CB8B53CAF97F4518 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		6F5B030F157B92AE4D0A18F3 /* PaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
+		04F2632A5113BFB9665F25D1 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		EF44218D630D5D9AA02FEBDC /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		D4E534FAEB008222FEDD41CD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F9C02F92B0C0C445D8E77084 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		28235E89177CA9556850F92E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F9948837DA9C19D0135E70AA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		82FAC8FBBE40D320079F66C0 /* CartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCoordinator.swift; sourceTree = "<group>"; };
+		3D68F3040B4B9A2BCA08E2D3 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		A2C870F7ADE6644FA894F2C9 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		FC110621D2C7EF3CAC2ADAAF /* CheckoutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCoordinator.swift; sourceTree = "<group>"; };
+		09EE8B8E650044B479C97363 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		374E1BC4E8818111F584258B /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		19006CC9315AAE8CA45D7B63 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		A132567EB49077BF8C6D6D35 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
+		D78D8392720E12EA5CB6D536 /* OrderHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewModel.swift; sourceTree = "<group>"; };
+		2C687619652D01E2972E861E /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
+		9B2CEAF4D6ACC66B01357B9D /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		647EECF7602B422A049DE264 /* ProductCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinator.swift; sourceTree = "<group>"; };
+		7BA52C58E2D24C5533180DB1 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		A23E762F7BAC33082C44A4FF /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		4ADF59BAE7E914734ACF379A /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		9EA30DA75DA0CC1058A1A6DF /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		7EB8222913DF2C8FB0DBD939 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		D8CE174A02B1ED6D1776DDF1 /* StripePaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripePaymentService.swift; sourceTree = "<group>"; };
+		58F02208A1E6A99468703A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AB5F4EC773FCD3C064EE53F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7457B885F5833A9CD7EAA59B /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		4D6680BC65839A5DD91C3CB6 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		338A48BAEEBB3A3F72ABE697 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		8981A60EB1D1441F34E55F95 /* CartServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartServiceTests.swift; sourceTree = "<group>"; };
+		D115C065CCB734989B400A87 /* VelraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelraUITests.swift; sourceTree = "<group>"; };
+		88D0B737F8E3878309222576 /* VelraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7972C6E95D65F3EBDC77DB76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6D6BD089265E713A425640 /* StripePaymentSheet in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854FF0F336C2A7848E5B42DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6115235F68288B205E2BFB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		450B220DE8EEB27904FC3DC4 /* Velra */ = {
+			isa = PBXGroup;
+			children = (
+				DFA380731508A700A0D5DBA4 /* Velra */,
+				5BD2F155E8764D724A94CDEC /* VelraTests */,
+				FC7E7AA3CDE213F42BDEF147 /* VelraUITests */,
+				30772F61AC9BDC8631745269 /* Products */,
+				D8BD5DD42310CB1693158D7B /* Frameworks */,
+			);
+			name = "Velra";
+			sourceTree = "<group>";
+		};
+		30772F61AC9BDC8631745269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE81E76C18D72107BBFA5C60 /* Velra.app */,
+				2286AB0530DE56FCB9BCCFEB /* VelraTests.xctest */,
+				B3012743933F91F6229C7455 /* VelraUITests.xctest */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		D8BD5DD42310CB1693158D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		DFA380731508A700A0D5DBA4 /* Velra */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D408CB1881C666AAC0831 /* App */,
+				02BE1F040D6AD5FBE2009848 /* Core */,
+				1ED1F017CAB8F2C52FEE8092 /* Domain */,
+				CC9BEF084CD7556515CFAAE8 /* Features */,
+				3F29DCB5839CF96C9208BDCF /* Integrations */,
+				AE59D88C5460D2413CB142C1 /* Resources */,
+			);
+			path = Velra;
+			sourceTree = "<group>";
+		};
+		AB8D408CB1881C666AAC0831 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				708FDA605C57F789D9330D7E /* VelraApp.swift */,
+				F056A84DFF45A3F7E7BFD71E /* AppCoordinator.swift */,
+				9FB2BE3B8DF64DAAEEF406A0 /* DependencyContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		02BE1F040D6AD5FBE2009848 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B25735C836CE4DDAD744F57C /* Configuration */,
+				892CCE16ED3FACED01848925 /* Networking */,
+				9BF34F0061B392F6974FFC52 /* Security */,
+				5FFBEB67094F66CE4879B434 /* Storage */,
+				55CA357301FB4C3CB49FB022 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B25735C836CE4DDAD744F57C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A96556681655A3E661A76401 /* AppConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		892CCE16ED3FACED01848925 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7F383EF1A5E569919BF4FD35 /* APIClient.swift */,
+				2237FB9C6E66E3F74F8381EA /* APIEndpoint.swift */,
+				784BD2BC21CB05408E68068F /* APIError.swift */,
+				EB70FFA3C202A920A8A07B09 /* AuthEndpoint.swift */,
+				84230FDBCC72319767D4A965 /* CartEndpoint.swift */,
+				230345834093D61D1EB1B57F /* HTTPMethod.swift */,
+				539194520F693AFED6ADC66B /* OrderEndpoint.swift */,
+				9C33FFB6278719BE13C55C29 /* PaymentEndpoint.swift */,
+				EF0D7598969D50227369DA26 /* ProductEndpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9BF34F0061B392F6974FFC52 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7655BAFD90E62F5E2BB9A /* KeychainManager.swift */,
+				72858B8531F56360C3901229 /* TokenManager.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		5FFBEB67094F66CE4879B434 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E276683B84366777524E5211 /* PersistenceController.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		55CA357301FB4C3CB49FB022 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				69449B58712EA32C0317B0F6 /* Constants.swift */,
+				9189810866D1821A605DEF6E /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1ED1F017CAB8F2C52FEE8092 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				309D90830D124212B9C3EB35 /* Models */,
+				220725AE3DBC9E2ED123C924 /* Repositories */,
+				C9CC6892E3242664D97B54DB /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		309D90830D124212B9C3EB35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F37624EF793C38F9E06256F /* CartItem.swift */,
+				E0A4E66B947D0C4D0B52C9CE /* Order.swift */,
+				33BD551D85A53DBBA2EDD24F /* PaymentIntent.swift */,
+				303D729EF01AA93781AD5E70 /* Product.swift */,
+				89D22D595D3C7DF888270B81 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		220725AE3DBC9E2ED123C924 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				542150A14A45B653E57EEBBC /* AuthRepositoryProtocol.swift */,
+				E30068AEE66C35DD9AE62C05 /* CartRepositoryProtocol.swift */,
+				53B6FF45D183D02D9B23AAF1 /* OrderRepositoryProtocol.swift */,
+				E0C45972FECDE4889DEB3493 /* PaymentRepositoryProtocol.swift */,
+				622B9B17A0FECFE9C47B6D2B /* ProductRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C9CC6892E3242664D97B54DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				446785297501548DEDA544F4 /* AuthService.swift */,
+				902FB49704E8766E241DD512 /* CartService.swift */,
+				5CA9BAE9CB8B53CAF97F4518 /* OrderService.swift */,
+				6F5B030F157B92AE4D0A18F3 /* PaymentService.swift */,
+				04F2632A5113BFB9665F25D1 /* ProductService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC9BEF084CD7556515CFAAE8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EA6CDF98531942AF2A0435A7 /* Authentication */,
+				DBFA80B1B8F7D4E3E644C072 /* ProductCatalog */,
+				197E7052733796A1FCAECA67 /* Cart */,
+				E77CC52E90BEF71B75B31CB1 /* Checkout */,
+				3B55B438101BDCD3460980E2 /* Orders */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EA6CDF98531942AF2A0435A7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				60CA7161035AE4982FCBC4D2 /* Coordinator */,
+				DF996FCDE39341524B53111A /* ViewModels */,
+				2B044872BA1ECA3400FB1E7A /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		60CA7161035AE4982FCBC4D2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EF44218D630D5D9AA02FEBDC /* AuthCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DF996FCDE39341524B53111A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4E534FAEB008222FEDD41CD /* LoginViewModel.swift */,
+				F9C02F92B0C0C445D8E77084 /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2B044872BA1ECA3400FB1E7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28235E89177CA9556850F92E /* LoginView.swift */,
+				F9948837DA9C19D0135E70AA /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBFA80B1B8F7D4E3E644C072 /* ProductCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				C2324F92A1ECBB09E8AE394D /* Coordinator */,
+				AC1442AECA51E655D90F6B32 /* ViewModels */,
+				BE9AA5D7EA4950D69C018680 /* Views */,
+			);
+			path = ProductCatalog;
+			sourceTree = "<group>";
+		};
+		C2324F92A1ECBB09E8AE394D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				647EECF7602B422A049DE264 /* ProductCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AC1442AECA51E655D90F6B32 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7BA52C58E2D24C5533180DB1 /* ProductDetailViewModel.swift */,
+				A23E762F7BAC33082C44A4FF /* ProductListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE9AA5D7EA4950D69C018680 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4ADF59BAE7E914734ACF379A /* ProductDetailView.swift */,
+				9EA30DA75DA0CC1058A1A6DF /* ProductListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		197E7052733796A1FCAECA67 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				1E4E006C874FAE3908E42454 /* Coordinator */,
+				4281B626C714983A8BA48213 /* ViewModels */,
+				DCA92DBBA45459D66E0337C3 /* Views */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		1E4E006C874FAE3908E42454 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				82FAC8FBBE40D320079F66C0 /* CartCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4281B626C714983A8BA48213 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D68F3040B4B9A2BCA08E2D3 /* CartViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DCA92DBBA45459D66E0337C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2C870F7ADE6644FA894F2C9 /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E77CC52E90BEF71B75B31CB1 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				3D9759C7B753E9E4D60455CE /* Coordinator */,
+				EF21258A8EED54C6B3739B43 /* ViewModels */,
+				5E5711B007996B7D03024041 /* Views */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		3D9759C7B753E9E4D60455CE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FC110621D2C7EF3CAC2ADAAF /* CheckoutCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EF21258A8EED54C6B3739B43 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09EE8B8E650044B479C97363 /* CheckoutViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5E5711B007996B7D03024041 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				374E1BC4E8818111F584258B /* CheckoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B55B438101BDCD3460980E2 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				3724E9A1E192036B1C29602D /* Coordinator */,
+				C1C896CC1FCCD9D87A425235 /* ViewModels */,
+				D924DBEC214A743FA1FE04A7 /* Views */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		3724E9A1E192036B1C29602D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				19006CC9315AAE8CA45D7B63 /* OrderCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C1C896CC1FCCD9D87A425235 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A132567EB49077BF8C6D6D35 /* OrderDetailViewModel.swift */,
+				D78D8392720E12EA5CB6D536 /* OrderHistoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D924DBEC214A743FA1FE04A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C687619652D01E2972E861E /* OrderDetailView.swift */,
+				9B2CEAF4D6ACC66B01357B9D /* OrderHistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F29DCB5839CF96C9208BDCF /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				CE7193A2C7613932E1E98DA5 /* StripePaymentService */,
+				B0461F4A45338492411C3CEF /* PushNotificationManager */,
+			);
+			path = Integrations;
+			sourceTree = "<group>";
+		};
+		CE7193A2C7613932E1E98DA5 /* StripePaymentService */ = {
+			isa = PBXGroup;
+			children = (
+				D8CE174A02B1ED6D1776DDF1 /* StripePaymentService.swift */,
+			);
+			path = StripePaymentService;
+			sourceTree = "<group>";
+		};
+		B0461F4A45338492411C3CEF /* PushNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				7EB8222913DF2C8FB0DBD939 /* PushNotificationManager.swift */,
+			);
+			path = PushNotificationManager;
+			sourceTree = "<group>";
+		};
+		AE59D88C5460D2413CB142C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58F02208A1E6A99468703A4E /* Assets.xcassets */,
+				AEE5F5974E9F80F9FE720A0E /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEE5F5974E9F80F9FE720A0E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1AB5F4EC773FCD3C064EE53F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BD2F155E8764D724A94CDEC /* VelraTests */ = {
+			isa = PBXGroup;
+			children = (
+				7457B885F5833A9CD7EAA59B /* APIClientTests.swift */,
+				4D6680BC65839A5DD91C3CB6 /* ModelTests.swift */,
+				338A48BAEEBB3A3F72ABE697 /* ExtensionTests.swift */,
+				8981A60EB1D1441F34E55F95 /* CartServiceTests.swift */,
+			);
+			path = VelraTests;
+			sourceTree = "<group>";
+		};
+		FC7E7AA3CDE213F42BDEF147 /* VelraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D115C065CCB734989B400A87 /* VelraUITests.swift */,
+				88D0B737F8E3878309222576 /* VelraUITestsLaunchTests.swift */,
+			);
+			path = VelraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7C5BB25CEB9D151DDACCD7D /* Velra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09F95D15E38CC69A6674673 /* Build configuration list for PBXNativeTarget "Velra" */;
+			buildPhases = (
+				50708FC3D0F8E5B72432990C /* Sources */,
+				7972C6E95D65F3EBDC77DB76 /* Frameworks */,
+				5C0C49D1C13ED75230C2C408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Velra;
+			packageProductDependencies = (
+				8E41AA8251BDFF81594496EC /* StripePaymentSheet */,
+			);
+			productName = Velra;
+			productReference = BE81E76C18D72107BBFA5C60 /* Velra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB2D0C4C95A161C2C1D4AF2B /* VelraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938997E94E15DD5CF3243B0D /* Build configuration list for PBXNativeTarget "VelraTests" */;
+			buildPhases = (
+				30526341D9D47CDA805E3364 /* Sources */,
+				854FF0F336C2A7848E5B42DB /* Frameworks */,
+				B9B875E36A4F472FA210C5AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749D8976D703DE7159A49A17 /* PBXTargetDependency */,
+			);
+			name = VelraTests;
+			productName = VelraTests;
+			productReference = 2286AB0530DE56FCB9BCCFEB /* VelraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7EA851D549FDB92EBDF4E9B /* VelraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12BFA9935CE5A38C589B669 /* Build configuration list for PBXNativeTarget "VelraUITests" */;
+			buildPhases = (
+				8814B7BDAEA3425FC8D8FDB0 /* Sources */,
+				6115235F68288B205E2BFB98 /* Frameworks */,
+				EBBAF4ADED6A3C05094CDDE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71A4A87FE0F6EF0C4B7EB01 /* PBXTargetDependency */,
+			);
+			name = VelraUITests;
+			productName = VelraUITests;
+			productReference = B3012743933F91F6229C7455 /* VelraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Velra Technologies";
+				TargetAttributes = {
+					E7C5BB25CEB9D151DDACCD7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DB2D0C4C95A161C2C1D4AF2B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E7C5BB25CEB9D151DDACCD7D;
+					};
+					A7EA851D549FDB92EBDF4E9B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E7C5BB25CEB9D151DDACCD7D;
+					};
+				};
+			};
+			buildConfigurationList = FE422E61AE992D05BC2E14C2 /* Build configuration list for PBXProject "Velra" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 450B220DE8EEB27904FC3DC4;
+			packageReferences = (
+				144FDE2524016A240C1AABEC /* XCRemoteSwiftPackageReference "stripe-ios" */,
+			);
+			productRefGroup = 30772F61AC9BDC8631745269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7C5BB25CEB9D151DDACCD7D /* Velra */,
+				DB2D0C4C95A161C2C1D4AF2B /* VelraTests */,
+				A7EA851D549FDB92EBDF4E9B /* VelraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C0C49D1C13ED75230C2C408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99810209AD4FE3320BC122AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B875E36A4F472FA210C5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBAF4ADED6A3C05094CDDE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50708FC3D0F8E5B72432990C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E848D552807F8DCFAE9F5F /* VelraApp.swift in Sources */,
+				5A8C0FBB5FDA6CAEF929D832 /* AppCoordinator.swift in Sources */,
+				F1818E595AB730AD63357058 /* DependencyContainer.swift in Sources */,
+				8675AB0438224BECF9C25088 /* AppConfiguration.swift in Sources */,
+				BC4473AC697E388F456B70C0 /* APIClient.swift in Sources */,
+				740FAF43FED5AB2994B58F0A /* APIEndpoint.swift in Sources */,
+				CCB202E18CBB7BA449EA001D /* APIError.swift in Sources */,
+				8F0FA706B960C5EF8702732E /* AuthEndpoint.swift in Sources */,
+				FE5E2B9F23805E331BBE7088 /* CartEndpoint.swift in Sources */,
+				F1E123557EA82D0F830872EC /* HTTPMethod.swift in Sources */,
+				D22F018C38B67BB7E6495AB7 /* OrderEndpoint.swift in Sources */,
+				B11EAD443833ABF9CC1D1C5E /* PaymentEndpoint.swift in Sources */,
+				52A5F2CBEEE3556B40FC61C4 /* ProductEndpoint.swift in Sources */,
+				811C19F1EAC86FD8CA6805FB /* KeychainManager.swift in Sources */,
+				E96BED4461F8EE2CE7B8364F /* TokenManager.swift in Sources */,
+				F4CAF99A9CA92342A5D65401 /* PersistenceController.swift in Sources */,
+				04B508C8AD2CED2FB9272C8E /* Constants.swift in Sources */,
+				2C2876EA3165A77F57869563 /* Extensions.swift in Sources */,
+				944203633E1C8611544600A5 /* CartItem.swift in Sources */,
+				E41EDEC19B6DE12909A7988D /* Order.swift in Sources */,
+				636A96AEDB8F7AEBB78E1450 /* PaymentIntent.swift in Sources */,
+				C5988E318B086FD27148EA99 /* Product.swift in Sources */,
+				AFC1A1567DC3FECE9A256EFB /* User.swift in Sources */,
+				265D1CF240DDA8A63E2A80DB /* AuthRepositoryProtocol.swift in Sources */,
+				F04F71FDDB0ED44527D113A1 /* CartRepositoryProtocol.swift in Sources */,
+				A69C0D8677F692B2A5B87115 /* OrderRepositoryProtocol.swift in Sources */,
+				461D995A2286B95E9D97DF74 /* PaymentRepositoryProtocol.swift in Sources */,
+				8FD67CE8793409CF306A437A /* ProductRepositoryProtocol.swift in Sources */,
+				14E2DF60E7A3386AFCC2D8F9 /* AuthService.swift in Sources */,
+				747FC31997B37481B1AE3579 /* CartService.swift in Sources */,
+				E9F111C73AEF3EBF9BE11C74 /* OrderService.swift in Sources */,
+				A7EEA4C90D6043966C4D6491 /* PaymentService.swift in Sources */,
+				6B3BD589A8BDA63343AEA9D4 /* ProductService.swift in Sources */,
+				93D4CB0092CAD68D67A035AE /* AuthCoordinator.swift in Sources */,
+				5D376AE547D09F8C2769FA15 /* LoginViewModel.swift in Sources */,
+				27FAFB84A5F0AB70846DA33E /* RegisterViewModel.swift in Sources */,
+				571A409E86561BAB9BA0620A /* LoginView.swift in Sources */,
+				39C104CBE620CCAE985ACFA4 /* RegisterView.swift in Sources */,
+				677B86B7EB5AFF4BC5F6D910 /* CartCoordinator.swift in Sources */,
+				3D76D871C80F32041331AF5A /* CartViewModel.swift in Sources */,
+				9A84CBCF0175C4AFC2CC3B6F /* CartView.swift in Sources */,
+				5EB55BBAEA4B29A535AA8564 /* CheckoutCoordinator.swift in Sources */,
+				DDB825FA7486ECCFBD2AEEF3 /* CheckoutViewModel.swift in Sources */,
+				259773CAAE1D7FA4D6F837AA /* CheckoutView.swift in Sources */,
+				9C6A57EE2A8261FE742D5909 /* OrderCoordinator.swift in Sources */,
+				70EEC4B2AD242A86F0C060BF /* OrderDetailViewModel.swift in Sources */,
+				72A551DE5F818DCB88AA85F4 /* OrderHistoryViewModel.swift in Sources */,
+				CA79AEFB575A31CCBA16E725 /* OrderDetailView.swift in Sources */,
+				4810B62B4A9513713F5EBA2D /* OrderHistoryView.swift in Sources */,
+				FC46A1547CA5BC8335F5A285 /* ProductCoordinator.swift in Sources */,
+				1E6AA5C4187B539FB0A1DF8D /* ProductDetailViewModel.swift in Sources */,
+				212B193713D6B0C90DFFCDCB /* ProductListViewModel.swift in Sources */,
+				2ADA33082F256D7F5612798F /* ProductDetailView.swift in Sources */,
+				D14D977101FC102C26892736 /* ProductListView.swift in Sources */,
+				70A8B8B901CA83DC5963FF26 /* PushNotificationManager.swift in Sources */,
+				1C50828355318A2BC3F64438 /* StripePaymentService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30526341D9D47CDA805E3364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909630E34B4A8A9428DAEEA8 /* APIClientTests.swift in Sources */,
+				372B18E0D526879AA8FFDAE8 /* ModelTests.swift in Sources */,
+				CDD348492A1021C7076E9BC2 /* ExtensionTests.swift in Sources */,
+				9DE9F0DCF4E62971435C3F6E /* CartServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814B7BDAEA3425FC8D8FDB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10075173F569092FE444EDE /* VelraUITests.swift in Sources */,
+				D3873B01431877C7B07F8D19 /* VelraUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		749D8976D703DE7159A49A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7C5BB25CEB9D151DDACCD7D /* Velra */;
+			targetProxy = 54B2C0C2D036711EC50215B7 /* PBXContainerItemProxy */;
+		};
+		A71A4A87FE0F6EF0C4B7EB01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7C5BB25CEB9D151DDACCD7D /* Velra */;
+			targetProxy = 216F88528C8D10A4B8041F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8075F60415069C2BCB23FFD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSTCOMPILER_WARNINGS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		63A23CADC2DB422E378CB61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSTCOMPILER_WARNINGS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD950A8C39AE26E74C4B8CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Velra/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Velra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.velra.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D87766918198A19E7606DEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Velra/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Velra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.velra.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20E3DDD3842F185FF0A23D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.velra.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Velra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Velra";
+			};
+			name = Debug;
+		};
+		435D581B70593929E50CA0F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.velra.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Velra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Velra";
+			};
+			name = Release;
+		};
+		573573246021155FB643EE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.velra.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Velra;
+			};
+			name = Debug;
+		};
+		BA74A378D9D4B072290C547E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.velra.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Velra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE422E61AE992D05BC2E14C2 /* Build configuration list for PBXProject "Velra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8075F60415069C2BCB23FFD1 /* Debug */,
+				63A23CADC2DB422E378CB61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09F95D15E38CC69A6674673 /* Build configuration list for PBXNativeTarget "Velra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD950A8C39AE26E74C4B8CAE /* Debug */,
+				D87766918198A19E7606DEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938997E94E15DD5CF3243B0D /* Build configuration list for PBXNativeTarget "VelraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E3DDD3842F185FF0A23D81 /* Debug */,
+				435D581B70593929E50CA0F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12BFA9935CE5A38C589B669 /* Build configuration list for PBXNativeTarget "VelraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				573573246021155FB643EE58 /* Debug */,
+				BA74A378D9D4B072290C547E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		144FDE2524016A240C1AABEC /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E41AA8251BDFF81594496EC /* StripePaymentSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 144FDE2524016A240C1AABEC /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripePaymentSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
