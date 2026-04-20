@@ -36,7 +36,7 @@ final class CheckoutViewModel: ObservableObject {
     }
 
     var totalAmountInCents: Int {
-        Int(totalAmount * 100)
+        Int((totalAmount * 100).rounded())
     }
 
     func loadCartItems() {

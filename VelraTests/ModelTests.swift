@@ -19,6 +19,7 @@ final class ModelTests: XCTestCase {
         """.data(using: .utf8)!
 
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         let product = try decoder.decode(Product.self, from: json)
 
         XCTAssertEqual(product.id, "prod-001")
@@ -26,6 +27,8 @@ final class ModelTests: XCTestCase {
         XCTAssertEqual(product.price, 199.99)
         XCTAssertEqual(product.stock, 50)
         XCTAssertEqual(product.rating, 4.5)
+        XCTAssertEqual(product.imageURL, "https://example.com/image.jpg")
+        XCTAssertEqual(product.reviewCount, 120)
         XCTAssertTrue(product.isInStock)
     }
 
@@ -41,6 +44,7 @@ final class ModelTests: XCTestCase {
         """.data(using: .utf8)!
 
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         let product = try decoder.decode(Product.self, from: json)
 
         XCTAssertFalse(product.isInStock)
